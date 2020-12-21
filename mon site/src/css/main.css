@@ -1,0 +1,380 @@
+/* GLOBAL */
+
+.heading-site {
+    text-align: center;
+    font-family: 'Monserrat', sans-serif;
+}
+.COLORED{
+    height: 400px;
+    width: 100%;
+    background-color: #EEA920;
+    padding: 30px;
+    text-align: center;
+}
+/* HEADER */
+.header {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    height: 70px;
+    line-height: 70px;
+    background-color:rgba(131, 131, 131, 0.288);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.header .header-logo {
+    color:  #EEA920;
+    font-family: 'Dancing Script';
+    float: left;
+    margin-left: 30px;
+    width: 35px;
+    padding-top: 12.5px;
+}
+
+.header .header-menu {
+    float: right;
+    margin-right: 30px;
+}
+
+.header .header-menu a {
+    margin-right: 15px;
+    color: white;   
+    text-transform: uppercase;
+}
+.header .header-menu a:hover {
+color: #EEA920;
+border: 1px solid #EEA920;
+transition: .5s;
+font-family: 'dancing Script';
+}
+
+nav #icon-menu{
+    float: right;
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.header-menu-logo{
+    display: none;
+}
+
+/* ALL ICON */
+.fa {
+    color: #EEA920;
+    text-align: center;
+    align-items: center;
+}
+
+/* BANNER */
+
+.banner {
+    margin-top: -24px;
+}
+
+.banner .banner-image {
+    position: relative;
+    width: 100%;
+}  
+
+.banner .banner-content{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+} 
+
+.banner .banner-content h1,
+.banner .banner-content h2 {
+    color: white;
+}
+
+h2.subtitle{
+    font-size: 24px;
+}
+/* ABOUT */
+.about{
+    background-color: rgba(139, 139, 139, 0.541);  
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.profil{
+    width: auto;
+    height: max-content;
+    margin:50px 0 50px 50px;
+    text-align: left;
+    vertical-align: middle;
+}
+.text{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.quote{
+    font-family: 'dancing script';
+}
+.presentation{
+    background-color: rgba(139, 139, 139, 0.541);
+    padding:5px;
+    width: auto;
+}
+.about .about-single-element .icon{
+    font-size: 30px;
+    text-align: center;
+}
+.about .about-single-element{
+    text-align: center;
+}
+.about .about-single-element p{
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.quote {
+    font-family: 'dancing script';
+    font-size: 30px;
+    text-align: center;
+}
+/* PORTEFOLIO */
+.iconp {
+    font-size: 12px;
+}
+.box.cv {
+    text-align: center;
+}
+
+
+
+/* PASSIONS */
+.passions .columns{
+    width: auto;
+    margin: 0;
+    padding-right: 7px;
+    padding-left: 12px;
+}
+.p-title {
+text-align: center;
+}
+.passions .columns .p{
+    text-align: left;
+    vertical-align: middle;
+}
+.passions .columns .p1 .p-passion {
+    border-left: 2px;
+    border-right: 2px;
+    padding-top: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.passions .columns .lecture{
+display: inline-block;
+}
+.icon{
+    color: #EEA920;
+    vertical-align: middle;
+}
+.ulicon{
+    list-style: none;
+    text-align: center;
+}
+.ulicon li {
+    display: inline-block;
+}
+.passion-list li {
+    list-style: square;
+    padding-left: 3px;
+    vertical-align: middle;
+}
+.passion-list ul {
+padding-left: 20px;
+}
+/* SLIDER */
+.Carrousel{
+    display: inline-block;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: auto; 
+    float: left;
+}
+
+div#slider { width: 100%; max-width: 100%; overflow: hidden } 
+
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    left: 0;
+    text-align: left;
+    animation: 30s slidy infinite;
+  }
+
+div#slider figure img { width: 20%; height: auto; float: left; }
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+  }
+
+
+/* FOOTER */
+
+.footer .footer-informations{
+    text-align: right;
+}
+
+.footer .footer-informations ul{
+    display: inline-block;
+    list-style: none;
+}
+
+/* MODAL */
+
+.modal .modal-card {
+    top: 90px;
+}
+
+/* RESPONSIVE */
+
+    /* Resp. Phone S */
+@media screen and (max-width: 320px){
+    
+}
+    /* Resp. Phone L */
+@media screen and (max-width: 425px) and (min-width:320px){
+    .header {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        height: 70px;
+        line-height: 70px;
+        background-color:rgba(0, 0, 0, 0);
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
+    .header .header-menu a {
+        margin-right: 15px;
+        color: white;   
+        text-transform: uppercase;
+    }
+    .header .header-menu a:hover {
+    color: #EEA920;
+    border: 1px solid #EEA920;
+    transition: .5s;
+    font-family: 'dancing Script';
+    }
+
+    nav .header-menu-logo{
+        display: block;
+    }
+}
+    /* Resp. Tablette */
+@media screen and (max-width: 768px) and (min-width:425px){
+
+        /* Menu 768px */
+    .header .header-logo {
+        color:  #EEA920;
+        font-family: 'Dancing Script';
+        float: left;
+        margin-left: 20px;
+        width: 35px;
+    }
+    
+    .header .header-menu {
+        float: right;
+    }
+    
+    .header .header-menu a {
+        margin-right: 15px;
+        color: white;   
+        text-transform: uppercase;
+    }
+    .header .header-menu a:hover {
+    color: #EEA920;
+    border: 1px solid #EEA920;
+    transition: .5s;
+    font-family: 'dancing Script';
+    }
+
+    nav .header-menu-logo{
+        display: none;
+    } 
+
+    /* Banner 768pX */
+    .banner .banner-content{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 80%;
+    } 
+
+    /* ABOUT */
+.about{
+    background-color: rgba(139, 139, 139, 0.541);  
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.profil{
+    width: auto;
+    height: max-content;
+    margin:50px 0 50px 50px;
+    text-align: left;
+    vertical-align: middle;
+}
+.text{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: auto;
+}
+.quote{
+    font-family: 'dancing script';
+}
+.presentation{
+    background-color: rgba(139, 139, 139, 0.541);
+    padding:10px;
+    width: auto;
+}
+.about .about-single-element .icon{
+    font-size: 30px;
+    text-align: center;
+}
+.about .about-single-element{
+    text-align: center;
+}
+.about .about-single-element p{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.quote {
+    font-family: 'dancing script';
+    font-size: 27px;
+    text-align: center;
+}
+}
+    /* Resp. Laptop */
+@media screen and (max-width: 1024px) and (min-width:768px){
+ 
+        /* Banner 1024px */
+    .banner .banner-content{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 100%;
+    } 
+        /* About 1024px */
+
+}

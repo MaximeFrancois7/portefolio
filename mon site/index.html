@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Maxime François</title>
+
+<!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="src/css/main.css">
+<!-- CSS -->
+    
+<!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0f9f43a683.js" crossorigin="anonymous"></script>
+<!-- Font -->
+
+<!-- meta SEO -->
+<meta name="description" content="La description du site en lien avec ton nom ta profession et ce qui concerne le site">
+<meta name="keywords" content="ensemble de mots e.g. webdesign, project manager, présdent ligue des jeunes talents">
+<!-- meta SEO -->
+
+<!-- meta Responsive -->
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+<!-- meta Responsive -->
+
+</head>
+<!-- head -->
+
+<!-- body -->
+<body>
+    
+<!-- header -->
+
+    <div class="block">
+        <header class="header is-mobile">
+            <div class="header-logo">
+              <a href="#"><img src="src/img/logo/1yb-web.png" alt="mon logo"></a>
+            </div>
+            <nav class="header-menu">
+                <a href="index.html">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#portefolio">Portefolio</a>
+                <a href="#contact">Contact</i></a>
+            </nav>
+            <nav class="header-menu-logo">
+              <ul>
+                <li><a href="index.html"><i class="fas fa-home" id="icon-menu"></i></a></li>
+                <li><a href="#apropos"><i class="fas fa-smile" id="icon-menu"></i><i class="fas fa-smile-wink click-menu" id="icon-menu"></i></a></li>
+                <li><a href="#portefolio"><i class="fas fa-archive" id="icon-menu"></i></a></li>
+                <li><a href="#contact"><i class="fas fa-inbox" id="icon-menu"></i></a></li>
+              </ul>
+            </nav>
+        </header>
+    </div>
+
+<!-- header -->
+
+<!-- banner -->
+    <div class="block">
+        <div class="banner">
+            <img src="src/img/bg4.jpg" alt="un ordinateur avec du code" class="banner-image">
+            <span>Photo by <a href="https://unsplash.com/@clemhlrdt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Clément H</a> on <a href="https://unsplash.com/s/photos/desk-development?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+            <div class="banner-content">
+            <h1 class="title is-1">Bienvenue sur mon Portefolio</h1>
+            <h2 class="subtitle">Découvrez mes travaux et mon univers</h2>
+            <button class="button is-link" id="open_modal">Contactez-moi</Contactez-moi></button>
+        </div>
+        </div>
+    </div>
+<!-- banner -->
+
+<!-- modal -->
+    <div class="modal" id="modal_to_open">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Contactez-moi</p>
+            <button class="delete" aria-label="close" id="close_modal"></button>
+        </header>
+        <section class="modal-card-body">
+            <div class="footer-contact-form">
+                <form>
+                    <div class="field">
+                        <label class="label">Nom</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="e.g Durant">
+                        </div>
+                      </div>
+                      
+                      <div class="field">
+                        <label class="label">Prénom</label>
+                        <div class="control has-icons-left has-icons-right">
+                          <input class="input is-success" type="text" placeholder="e.g Bulma">
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                          </span>
+                          <span class="icon is-small is-right">
+                            <i class="fas fa-check"></i>
+                          </span>
+                        </div>
+                      </div>
+                      
+                      <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                          <input class="input is-danger" type="email" placeholder="e.g hello@world.com">
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                          </span>
+                          <span class="icon is-small is-right">
+                            <i class="fas fa-exclamation-triangle"></i>
+                          </span>
+                        </div>
+                        <p class="help is-danger">This email is invalid</p>
+                      </div>
+                      
+                      <div class="field">
+                        <label class="label">Objet</label>
+                        <div class="control">
+                          <div class="select">
+                            <select>
+                              <option>Sélectionnez votre objet</option>
+                              <option>Recrutement</option>
+                              <option>Projet</option>
+                              <option>Ligue des jeunes talents</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="field">
+                        <label class="label">Message</label>
+                        <div class="control">
+                          <textarea class="textarea" placeholder="Ecrivez votre message"></textarea>
+                        </div>
+                      </div>
+                      
+                     
+                      <div class="field is-grouped">
+                        <div class="control">
+                          <button class="button is-link">Envoyez</button>
+                        </div>
+                        <div class="control">
+                          <button class="button is-link is-light">Annulez</button>
+                        </div>
+                      </div>
+                </form>
+            </div>
+        </section>
+        </div>
+    </div>
+<!-- modal -->
+
+<!-- section : à propos -->
+
+    <div class="block is-full is-mobile">
+      <div class="box is-mo">
+        <h2 class="subtitle heading-site" id="apropos"><strong>À propos</strong></h2>
+        <div class="container about box is-mobile">
+                <div class="columns about-single-element is-mobile">
+                  <div class="profil is-mobile"><img src="src/img/Photo-profil.png" alt="photo de Maxime François">
+                  </div>
+                  <div class="text is-mobile"><p class="text"><br><strong class="title">Je me présente <a href="https://www.16personalities.com/profiles/58e3ac77d784f">Maxime François</a>,</strong><br>
+                  <br>Junior Web Developer, je suis étudiant à l'ETNA, l'École des Technologies Numériques Avancées.<br> J'étudie pour valider un Bachelor Responsable Projet Web et Mobile.
+                    In fine, j'ambitionne de devenir Chef de Projet Digital et de travailler pour des clients dans le monde entier. 
+                  Je suis en recherche d'une alternance au poste de Product Owner ou Assistant Chef de Projet Digital. Je vous laisse parcourir mon site pour découvrir ma personne. 
+                  <br><br>Je reste à votre disposition n'hésitez pas à me contacter.
+                  <br><br>À très vite.<br></p>
+                  
+                  </div>
+                </div>
+         </div>
+        </div>
+         <blockquote class="quote"><br>« Je ne perds jamais, soit je gagne, soit j'apprends. » <strong>Nelson Mandela</strong><br></blockquote>
+    </div>
+<!-- section : à propos -->
+
+<!-- portfolio -->
+    <div class="block is-full is-mobile">
+      <div class="box is-mobile">
+        <h2 class="subtitle heading-site is-mobile" id="portefolio"><strong>Mon Portefolio</strong></h2>
+        <div class="container is-mobile">
+          <div class="tile is-ancestor is-mobile">
+            <div class="tile is-4 is-vertical is-parent is-mobile">
+                  <div class="tile is-child box is-mobile">
+                    <div class="is-primary box passion-list">
+                      <p class="title">Projets réalisés</p>
+                      <p class="subtitle"><br><strong>Code</strong><br></p>
+                      <ul">
+                        <h1>Language Bash<br></h1>
+                          <li>hello_world</li>
+                          <li>count_between</li>
+                          <li>myQuestBook</li>
+                          <li>base_game</li>
+                        <h1><br>Language C<br></h1>
+                          <li>my_putsrt</li>
+                          <li>my_print_alpha</li>
+                          <li>my_printrevalpha</li>
+                        <h1><br>Langage HTML CSS PHP JS<br></h1>
+                        <li>Portefolio</li>
+                      </ul>
+                      <p class="subtitle"><br><strong>Événements</strong></p>
+                      <ul>
+                        <li>3 Soirées Pitch avec 150 spectateurs à chaque soirée et 35 jeunes accompagnés et présentés.</li>
+                        <li>1 Boot Camp 48 jeunes sélectionnés, 7 intervenants extérieurs recrutés pour l’occasion.</li>
+                        <li>1 Soirée remise de diplôme avec la présence d’une ministre et 2 préfets, présence de 150 invités.</li>
+                        <li>3 matchs du PSG au parc des princes en tant qu’Event Manager, 50 membres du programme présents dans la Loge ALL à chaque match.</li>
+                      </ul>
+                    </div>
+                  </div>  
+                  <div class="tile is-child box passion-list">
+                    <div class="box">
+                      <p class="title">Compétences</p>
+                      <ul class="passion-list">
+                        <li>Gestions de projets</li>
+                        <li>Management</li>
+                        <li>Travail d'équipe</li>
+                        <li>Développement Web</li>
+                        <li>Web marketing</li>
+                        <li>Organisation</li>
+                        <li>Communication marketing</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tile is-child box is-mobile">
+                      <div class="box">
+                        <p class="title">Languages</p>
+                        <ul>
+                          <li><span><i class="fab fa-lg fa-html5"></i></span> niveau débutant</li>
+                          <li><span><i class="fab fa-lg fa-css3-alt"></i></span> niveau débutant</li>
+                          <li><span><i class="fab fa-lg fa-js-square"></i></span> niveau débutant</li>
+                          <li><span><i class="fab fa-lg fa-php"></i></span> niveau débutant</li>
+                          <li class="bash"><span class="image is-32x32"><img src="src/img/icon/bash.png" alt="icon bash shell"></span> niveau débutant</li>
+                          <li><span class="image is-32x32"><a href="https://icons8.com/icon/40670/c-programming"></a><img class="is-16x16"src="https://img.icons8.com/color/48/000000/c-programming.png"/></span>niveau débutant</li>
+                        </ul>
+                      </div>
+                  </div>
+                  <div class="tile is-child box is-mobile">
+                    <div class="box">
+                      <p class="title">Environnement</p>
+                      <ul class="passion-list">
+                        <li>Linux niveau débutant</li>
+                        <li>Windows niveau débutant</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tile is-child box is-mobile">
+                    <div class="box cv">
+                      <a class="subtitle" href="file:///D:/Employment/CV/CV%20-%20Maxime%20FRAN%C3%87OIS%20-%20D%C3%A9veloppeur%20Web.pdf">Mon CV à télécharger</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="tile is-child box is-mobile">
+                <div class="notification box">
+                  <img src="src/img/carrousel/association/unnamed.jpg" alt="prise de parole en public pour présenter l'association la Ligue des Jeunes Talents, lors de la journée spécial alternance organisée par Impact Partner">
+                  <img src="src/img/carrousel/association/1595487800847.jpg" alt="prise de parole en public pour présenter l'association la Ligue des Jeunes Talents, lors de la journée spécial alternance organisée par Impact Partner">
+                  <img src="src/img/code.JPG" alt="Impréssion écran du code du portefolio">
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- portfolio -->
+
+<!-- Mes Passions -->
+<div class="block is-full">
+  <div class="box">
+    <h2 class="subtitle heading-site" id="passion"><strong>Mes Passions</strong></h2>
+    <div class="columns passions">
+      <div class="is-ancestor"></div>
+      <div class="is-1" id="sport">
+        <article class="is-primary is-child box">
+          <p class="title p-title">Sport</p>
+          <div class="p-passion">
+            <ul class="ulicon">
+              <li><span class="icon is-medium"><i class="fas fa-lg fa-futbol"></i></span></li>
+              <li><span class="icon is-medium"><i class="fas fa-lg fa-football-ball"></i></span></li>
+              <li><span class="icon is-medium"><i class="fas fa-lg fa-dumbbell"></i></span></li>
+            </ul>
+          </div> 
+          <div class="Carrousel" id="slider">
+            <figure>
+                <img src="src/img/carrousel/sport/1.jpg" alt="Prise de parole lors de la journée de l'alternance organisée par Impact Partner le 29 Septembre 2020">
+                <img src="src/img/carrousel/sport/3.jpg" alt="Prise de parole lors de la fin de la première semaine de BootCamp 17 Juillet 2020">
+                <img src="src/img/carrousel/sport/2.JPG" alt="Atelier prise de parole lors du BootCamp 16 Juillet 2020">
+                <img src="src/img/carrousel/sport/7.JPG" alt="2ème journée du BootCamp 14 Juillet 2020">
+                <img src="src/img/carrousel/sport/1.jpg" alt="Prise de parole lors de la journée de l'alternance organisée par Impact Partner le 29 Septembre 2020">
+            </figure>
+          </div>      
+          <div class="is-child box passion-list"><p class="subtitle"><br></p>
+            <ul>
+              <li>Fan de football (PSG)</li>
+              <li>Licencié ASBF depuis cette été Club en ligue régionale</li>
+              <li>A joué au Footbal Américain pendant 5 ans au Monarques de Saint-Denis</li>
+              <li>Demi-finaliste du championnat National Junior à 9 </li>
+              <li>A joué pendant 5 ans à l'AS Pierrefitte</li>
+            </ul>
+          </div>
+          <!-- <p><br>Je suis fan de football depuis mon plus jeune âge, mon père m'a transmit sa passion. Je regardes tous les matchs du PSG.
+          Je suis licencié de l'Association Sportive Banque de France depuis cette été, après quelques années sans compétition ça m'a beaucoup manqué. 
+          J'ai jouer 5 ans au football à l'AS Pierrefitte en junior, U11 et U13.
+          Ensuite je me suis essayé au Football Américain à Saint-Denis où j'ai vécu une formidable expérience. Celle-ci m'a permis d'apprendre à ce sport peu connu en France.
+          Les valeurs de ce sport qui sont respect, discipline et rigueur, je les mets en pratique dans ma vie de tous les jours. 
+          Lors de mes débuts au sein de l'équipe de junior à 9 National, j'ai eu l'opportunité d'atteindre la demi-final National. Ce fut une aventure fantastique qui ma marquée.
+          <br> 
+          </p>-->
+        </article>
+      </div>
+      <div class="is-1" id="voyage">
+        <article class=" is-child box p1">
+          <p class="title p-title">Voyage</p>
+          <div class="p-passion">
+            <ul class="ulicon">
+              <li><span class="icon is-medium"><i class="fas fa-lg fa-plane-departure"></i></span></li>
+              <li><span class="icon is-medium"><i class="fas fa-lg fa-plane"></i></span></li>
+              <li><span class="icon is-medium"><i class="fas fa-lg fa-plane-arrival"></i></span></li>
+            </ul>
+          </div> 
+          <div class="Carrousel" id="slider">
+            <figure>
+              <img src="src/img/carrousel/voyage/2.jpg" alt="Maxime prit en photo lors d'une descente en parapente">
+              <img src="src/img/carrousel/voyage/3.jpg" alt="levé de soleil sur la route en Croatie">
+              <img src="src/img/carrousel/voyage/4.jpg" alt="photo de Tenerif prise de l'hublot d'un avion avant l'atterissage">
+              <img src="src/img/carrousel/voyage/6.jpg" alt="coucher de soleil sur les bords de mer de Los Cristianos à Tenerif">
+              <img src="src/img/carrousel/voyage/2.jpg" alt="Prise de parole lors de la journée de l'alternance organisée par Impact Partner le 29 Septembre 2020">
+            </figure>
+          </div>
+          <div class="is-child box passion-list"><p class="subtitle"><br></p>
+            <ul>
+              <li>Voyage en Europe et les DOM-TOM</li>
+              <li>Séjour linguistique de 4 mois au Royaume-Uni</li>
+              <li>Ambitionne de voyager dans le monde</li>
+            </ul>
+          </div>   
+          <!-- <p><br>Depuis petit, j'ai eu la chance de voyager avec mes parents. J'ai pu découvrir des petis bouts de pays par ci et par là.
+            Notamment la Belgique, l'Allemagne, l'Italie, l'Andorre, la Suisse, la France bien sûr et ses belles régions, la Martinique, la Guadeloupe,
+            l'île de la Reunion. Après avoir valider ma licence Méthodes et Sciences Industrielles, j'ai fait mon premier voyage avec des amis à Majorque.
+            En suite 2 ans après, j'ai valider mon master Manager d'entreprise ou de centre de profit, je suis allé en Croatie et j'ai séjourné 4 mois
+            en Angleterre où j'ai pu parfaire mon anglais. Le dernier voyage que j'ai fait à l'étranger c'était à Tenerif.
+            J'espère reprendre le chemin du voyage après la crise sanitaire et découvrir la beauté du monde et ses richesses culturelles.
+          </p> -->
+        </article>
+      </div>
+      <div class="is-3 is-parent" id="association">
+        <article class="is-child box p1">
+          <p class="title p-title">Association</p>
+          <div class="p-passion">
+            <ul class="ulicon">
+              <li><span class="icon is-medium"><i class="fas fa-lg fa-hand-holding-heart"></i></span></li>
+              <li><span class="icon is-medium"><i class="fas fa-lg fa-network-wired"></i></span></li>
+              <li><span class="icon is-medium"><i class="fas fa-lg fa-share"></i></span></li>
+            </ul>
+          </div> 
+          <div class="Carrousel" id="slider">
+            <figure>
+              <img src="src/img/carrousel/association/3.jpg" alt="Atelier prise de parole lors du BootCamp 16 Juillet 2020">
+              <img src="src/img/carrousel/association/4.jpg" alt="2ème journée du BootCamp 14 Juillet 2020">
+              <img src="src/img/carrousel/association/LDJT.jpg" alt="Prise de parole lors de la fin de la première semaine de BootCamp 17 Juillet 2020">
+              <img src="src/img/carrousel/association/7.jpg" alt="2ème journée du BootCamp 14 Juillet 2020">
+              <img src="src/img/carrousel/association/3.jpg" alt="Prise de parole lors de la journée de l'alternance organisée par Impact Partner le 29 Septembre 2020">
+            </figure>
+          </div> 
+          <div class="is-child box passion-list"> <p class="subtitle"><br></p>
+            <ul>
+              <li>Création de l'association janvier 2019</li>
+              <li>Co-président depuis janvier 2020</li>
+              <li>Taux de retour à l'emploie 3 mois après une action réalisée 85%</li>
+              <li>Pour plus d'information n'hésitez pas à nous contacter à l'adresse suivante : liguesdesjeunestalents@gmail.com</li>
+            </ul>
+          </div>     
+          <!-- <p><br><br>Je suis Co-président de la Ligue des Jeunes Talents depuis février 2020. La vocation de l’association est de mettre en relation les jeunes en recherche d’emploi ou d’alternance et les entreprises par le biais d’actions innovantes. Nous organisons des soirées Éloquences, des boot camps alliant sport et coaching à l’insertion professionnelle. Depuis la création de l’association en janvier de 2019, nous avons aidé 85 jeunes. Le taux de retour à l’emploi est de 85 % 3 mois après avoir participé à nos activités. Le site internet de l’association est en cours de construction si vous souhaitez plus d’information ou participé à nos futurs événements (jeunes ou entreprise) n’hésitez pas à me contacter via mon formulaire ou contactez la Ligue à l’adresse suivante .
+          </p> -->
+        </article>
+      </div>
+      <div class="is-3 is-parent" id="lecture">
+        <article class="is-child box p1">
+          <p class="title p-title">Lecture</p>
+          <div class="p-passion">
+            <ul class="ulicon">
+              <li><span class="icon is-medium"><i class="fas fa-lg fa-book"></i></span></li>
+              <li><span class="icon is-medium"><i class="fas fa-lg fa-bookmark"></i></span></li>
+              <li><span class="icon is-medium"><i class="fas fa-lg fa-book-reader"></i></span></li>
+            </ul>
+          </div> 
+          <div class="Carrousel" id="slider">
+            <figure>
+                <img src="src/img/carrousel/lecture/alchimiste.jpg" alt="couverture du livre l'alchimiste de Paulo Coelho">
+                <img src="src/img/carrousel/lecture/L_armoire_magique.jpg" alt="couverture du livre le monde de Narnia tome 2 l'amoire magique de C. S. Lewis">
+                <img src="src/img/carrousel/lecture/louise_hay.jpg" alt="couverture du livre Transformez votre vie de Louise Hay">
+                <img src="src/img/carrousel/lecture/tower_of_god.jpg" alt="couverture du manga Tower of god de Slave In Utero">
+                <img src="src/img/carrousel/lecture/alchimiste.jpg" alt="couverture du livre l'alchimiste de Paulo Coelho">
+            </figure>
+          </div>            
+          <!-- <p><br>J’ai commencé à lire au début de mon adolescent. Je me suis attaché à la lecture de BD, puis en regardant les mangas en animés j’ai voulu connaitre la suite alors je me suis mis à lire les scans qui sont publié chaque semaine depuis je lis beaucoup de manga. Mon premier livre Fantasy littéraire fut le monde de Narnia tome 2 l’armoire magique de C. S. Lewis. J’ai lu également un livre de développement personnel « Transformez votre vie » de Louise Hay. -->
+              <Div class="is-child box passion-list"> <p class="subtitle">Lecture en cours</p>
+                <lu>
+                  <li> L’Alchimiste de Paulo Coelho</li>
+                  <li> Tower of God de Slave In Utero</li>
+                  <li> Volcanic age de Jeong-Jun et Tomato</li>
+                  <li> Solo Leveling de Chu-Gong </li>
+                  <li> Battle Through the heavens de Tian Can Tu Dou </li>
+                  <li> The Ruler of the Land de Jun Gook Jin </li>
+                  <li> One Piece de Oda Eiichiro </li>
+                  <li> Red Storm de Hyun Ahm </li>
+                  <li> Spirit Blade Mountain de Xian man dong man </li>
+                  <li> Star Martial God Technique de Mad Snail </li>
+                  <li> Gosu Ryu Ki Woon </li>
+                </lu>
+              </div>
+              <div class="is-child box passion-list"> <p class="subtitle">Lecture terminé</p>
+                <lu>
+                  <li> Le monde de Narnia tome 2 l’armoire magique de C. S. Lewis </li>
+                  <li> Naruto de Kishimoto Masashi </li>
+                  <li> Bleach de Kubo Tite </li>
+                  <li> Transformez votre vie de Louise Hay</li>
+                </lu>
+              </div>
+        </article>
+    </div>
+  </div>
+</div>
+<!-- <div class="Carrousel" id="slider">
+    <figure>
+        <img src="src/img/carrousel/engagé/2.JPG" alt="Prise de parole lors de la journée de l'alternance organisée par Impact Partner le 29 Septembre 2020">
+        <img src="src/img/1.jpg" alt="Prise de parole lors de la fin de la première semaine de BootCamp 17 Juillet 2020">
+        <img src="src/img/carrousel/engagé/77.jpg" alt="Atelier prise de parole lors du BootCamp 16 Juillet 2020">
+        <img src="src/img/carrousel/engagé/7.JPG" alt="2ème journée du BootCamp 14 Juillet 2020">
+        <img src="src/img/carrousel/engagé/2.JPG" alt="Prise de parole lors de la journée de l'alternance organisée par Impact Partner le 29 Septembre 2020">
+    </figure>
+  </div> -->
+</div>
+<!-- Mes Passions -->
+
+
+<!--Les javascritp de flex slider-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+<!-- body -->
+
+<!-- Footer -->
+<!-- Contact -->
+<div class="block">
+  <footer class="footer">
+      <h2 class="subtitle headin-site" id="contact"><strong>Contactez-moi</strong> </h2>
+      <div class="footer-contact-form">
+          <form>
+              <div class="field">
+                  <label class="label">Nom</label>
+                  <div class="control">
+                    <input id="name" class="input" type="text" placeholder="e.g Durant" name="name">
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <label class="label">Prénom</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input id="firstname" class="input is-success" type="text" placeholder="e.g Bulma" name="firstname">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                      <i class="fas fa-check"></i>
+                    </span>
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input id="email" class="input is-danger" type="email" placeholder="e.g hello@world.com" name="email">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                      <i class="fas fa-exclamation-triangle"></i>
+                    </span>
+                  </div>
+                  <p class="help is-danger">This email is invalid</p>
+                </div>
+                
+                <div class="field">
+                  <label class="label">Objet</label>
+                  <div class="control">
+                    <div id="object" class="select" name="object">
+                      <select>
+                        <option>Sélectionnez votre objet</option>
+                        <option>Recrutement</option>
+                        <option>Projet</option>
+                        <option>Ligue des jeunes talents</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control">
+                    <textarea id="message" class="textarea" placeholder="Ecrivez votre message" name="message"></textarea>
+                  </div>
+                </div>
+                
+               
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button class="button is-link" id="send_email">Envoyez</button>
+                  </div>
+                  <div class="control">
+                    <button class="button is-link is-light">Annulez</button>
+                  </div>
+                </div>
+          </form>
+      </div>
+      <div class="footer-informations">
+          <p>Saint-Denis</p>
+          <p>93200</p>
+          <ul>
+              <li>
+                  <a href="https://www.linkedin.com/in/maxime-francois">
+                      <i class="fab fa-lg fa-linkedin"></i>
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </footer>
+</div>
+<!-- Contact -->
+<!-- Footer -->
+
+</html>
